@@ -1,0 +1,4 @@
+drugs_env
+.vscode
+.env
+*.pyc

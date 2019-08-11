@@ -76,13 +76,11 @@ WSGI_APPLICATION = 'drugs.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {}
+    'default': dj_database_url.config(
+        default = os.environ.get('DATABASE_URL')
+    )
 }
 
-DATABASES['default'] = dj_database_url.config(
-    # default = os.getenv("DATABASE_URL", None)
-    default = 'postgres://kica@localhost:5432/drugs'
-)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

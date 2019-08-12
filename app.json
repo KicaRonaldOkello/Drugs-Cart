@@ -1,0 +1,13 @@
+{
+    "name": "Drugs-Cart",
+    "scripts": {},
+    "env": {
+        "SECRET_KEY":{"required":true}
+    },
+    "formation": {},
+    "buildpacks": [],
+    "stack": "heroku-18",
+    "addons": [
+        "heroku-postgresql"
+      ]
+  }
